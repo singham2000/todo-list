@@ -1,38 +1,120 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: "ubuntu";
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: rgb(19, 19, 48);
+  display: flex;
+  justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.panel {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  width: 160vh;
+  margin: 2vh;
+  padding: 3vh;
+  border-radius: 5vh;
+}
+.title {
+  color: rgb(49, 44, 44);
+  font-family: "ubuntu";
+  padding-top: 1vh;
+}
+.todoformbody {
   display: flex;
   flex-direction: column;
+  justify-self: center;
   align-items: center;
+  /* background-color: rgb(156, 199, 235); */
+  border-radius: 12px;
+  padding: 1vh;
+  height: 25vh;
+  width: 50vh;
+}
+.todowrite{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+.todoheading {
+  margin: 2vh;
+  font-weight: 800;
+  font-size: 1.2rem;
+  height: 3rem;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+}
+.tododescription {
+  font-size: 1.2rem;
+  font-weight: 800;
+  height: 3rem;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+}
+button.addtodo {
+  margin-top: 2vh;
+  font-size: 1.2rem;
+  height: 3rem;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  width: 8vh;
+  font-weight: 800;
+}
+button.addtodo:hover {
+  background-color: rgb(40, 233, 169);
+  color: aliceblue;
+  transition: all 0.5s;
+}
+.todolist{
+  display: flex;
+  background-color: rgb(200, 247, 247);
+  flex-wrap: wrap;
+  border-radius: 12px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.todolistbody{
+  display: flex;
+  flex-direction: column;
+  margin: 2vh;
+  border-radius: 12px;
+  background-color: rgb(88, 184, 184);
+  padding: 2vh;
+  width: 30vh;
+  height: 20rem;
+  font-size: 1rem;
+  text-align: left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.deltodo{
+  margin-top: 2vh;
+  font-size: 1.2rem;
+  height: 3rem;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  font-weight: 800;
+  background-color: rgb(102, 241, 234);
+  color: rgb(61, 62, 63);
+  transition: all 0.5s;
+}
+button.deltodo:hover{
+  background-color: rgb(245, 40, 40);
+  color: aliceblue;
+  transition: all 0.5s;
+}
+.options{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.tol{
+line-height: 0;
 }
